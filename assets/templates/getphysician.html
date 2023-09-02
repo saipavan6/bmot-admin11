@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Physician List</title>
+</head>
+<body>
+    <h1>Physician List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>PNum</th>
+                <th>Name</th>
+                <th>speciality</th>
+                <th>phone</th>
+                <th>experience</th>
+                <th>area</th>
+                <th>medicalcode</th>
+
+                <!-- Add more table headers for other fields -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for physician in physicians_data %}
+                <tr>
+                    <td>{{ physician.pnum }}</td>
+                    <td>{{ physician.firstname }}</td>
+                    <td>{{ physician.speciality }}</td>
+                    <td>{{ physician.phone }}</td>
+                    <td>{{ physician.experience }}</td>
+                    <td>{{ physician.address }}</td>
+                    <td>{{ physician.regno }}</td>
+                                        <td>
+
+
+                    </td>
+
+
+                    <!-- Add more table cells for other fields -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
