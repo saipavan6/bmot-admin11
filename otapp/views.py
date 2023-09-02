@@ -10,6 +10,9 @@ def home(request):
     data = dashboard()
     return render(request, 'bookmy _ot.html', data)
 
+
+def data():
+    pass
 def physician_list(request):
 
     physicians_data = get_All_Doctors_List()
