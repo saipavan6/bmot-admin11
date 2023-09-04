@@ -13,6 +13,8 @@ def home(request):
 
 def data():
     pass
+
+
 def physician_list(request):
 
     physicians_data = get_All_Doctors_List()
